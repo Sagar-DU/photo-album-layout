@@ -5,8 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Album</title>
+    <style>
+        header {
+            text-align: center;
+        }
+        .photo-album {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame {
+            width: 350px;
+            border: 2px solid lightgray;
+            border-radius: 5px;
+            position: relative;
+            margin: 10px;
+        }
+        .photo img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .photo-detail {
+            display: none;
+            position: absolute;
+            width: 350px;
+            top: 0;
+        }
+
+        .photo-detail h3 {
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+        }
+
+        .photo-detail p {
+            color:dimgray;
+            padding-left: 8px;
+        }
+
+        .photo-frame:hover .photo-detail{
+            display: block;
+            background-color: rgba(162, 174, 183, 0.262);
+            border-radius: 5px;
+        }
+
+    </style>
 </head>
 <body>
+    <header>
+        <h1>My Awsome Photo Album</h1>
+    </header>
+
+    <section>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="https://lh3.googleusercontent.com/8QLu6pjQBrLQMsYd6vggpgwRBkHjBtp6Y8IQMcHAD_RQH6FaV79drX6896sc2oZQwtZxq9ww_MaiUR4mI9NCn0d-FyoHHBs0VVTGgGt-qqX3jFr0nmviRlZJtXuI3ktSsQnHiceCKg=w2400" alt="">
+                </div>
+                <div class="photo-detail">
+                    <h3>An Old Gold</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero quisquam voluptate veniam alias officiis exercitationem, illum blanditiis amet fuga distinctio quam laboriosam vel commodi suscipit quasi id cumque animi nemo quia architecto fugiat,.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>
